@@ -78,7 +78,7 @@ def first_page(data):
     packet.seek(0)
     return PdfReader(packet)
 
-st.title("Simple Form with Upload and Download")
+st.title("Refactored Medras File Repor")
 
 name = st.text_input("Patient Name")
 medras_id = st.text_input("Medras id")
