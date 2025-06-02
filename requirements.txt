@@ -1,0 +1,9 @@
+flask
+requests
+boto3
+werkzeug
+PyPDF2
+PyMuPDF
+msal
+flask-cors
+streamlit
