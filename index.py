@@ -43,7 +43,7 @@ def first_page(data, page_height):
     can.drawCentredString(500, 739, "Chennai 600030, Tamil Nadu")
     can.drawImage("./empty.png",30, 640, width=555, height=80)
 
-    print(page_height)
+    # print(page_height)
     if int(page_height) < 800:
         can.drawImage("./empty.png",30, 590, width=555, height=70)
 
@@ -76,7 +76,7 @@ def first_page(data, page_height):
 
     # Second row
     can.drawString(x_start + 5, y_start - 44, "Investigation:")
-    can.drawString(x_start + 45*mm, y_start - 44, data["investigation"])  
+    can.drawString(x_start + 30*mm, y_start - 44, data["investigation"])  
     
 
     can.drawImage("./23.png",0, 0, width=620, height=72)
@@ -114,7 +114,7 @@ if st.button("Download Summary"):
         # Load original
         reader = PdfReader(file_content)
         box = reader.pages[0].mediabox
-        st.write([int(box.width), int(box.height)])
+        # st.write([int(box.width), int(box.height)])
         height = int(box.height)
         for i, page in enumerate(reader.pages):
             page.mediabox.upper_right = (letter[0], letter[1])
