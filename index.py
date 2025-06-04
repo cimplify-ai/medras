@@ -14,7 +14,7 @@ def all_pages(page_number):
     can.setFont("Helvetica-Bold", 10)
 
     # Header
-    can.drawImage("./22.png",0, 720, width=615, height=72)
+    can.drawImage("./header.png",0, 720, width=615, height=72)
     can.drawCentredString(300, 750, "Report")
     can.drawCentredString(500, 768, "No.20/6 Sengunthar Street,")
     can.drawCentredString(500, 754, "Shenoy Nagar (East)")
@@ -23,7 +23,7 @@ def all_pages(page_number):
     
     # Footer
     
-    can.drawImage("./23.png",0, 0, width=620, height=72)
+    can.drawImage("./footer.png",0, 0, width=620, height=72)
     can.drawCentredString(600, 25, page_number)
 
     can.save()
@@ -36,7 +36,7 @@ def first_page(data, page_height):
     can.setFont("Times-Roman", 12)
     # Header
     # can.drawImage("./empty.png",0, 780, width=615, height=72)
-    can.drawImage("./22.png",0, 720, width=615, height=72)
+    can.drawImage("./header.png",0, 720, width=615, height=72)
     can.drawCentredString(300, 750, "Report")
     can.drawCentredString(500, 768, "No.20/6 Sengunthar Street,")
     can.drawCentredString(500, 754, "Shenoy Nagar (East)")
@@ -80,7 +80,7 @@ def first_page(data, page_height):
     can.drawString(x_start + 163*mm, y_start - 44, data["medras_id"])
     
 
-    can.drawImage("./23.png",0, 0, width=620, height=72)
+    can.drawImage("./footer.png",0, 0, width=620, height=72)
   
     can.drawCentredString(600, 25, "1")
 
