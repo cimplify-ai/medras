@@ -91,6 +91,7 @@ def first_page(data, page_height):
 st.title("Simple Form with Upload and Download")
 
 name = st.text_input("Patient Name")
+lab = st.text_input("Lab Test No")
 medras_id = st.text_input("Medras id")
 age = st.number_input("Age", min_value=0, step=1)
 sex = st.text_input("sex")
@@ -132,7 +133,7 @@ if st.button("Download Summary"):
     st.download_button(
         label="Download as pdf",
         data=buffer,
-        file_name=name + ".pdf",
+        file_name= lab + name + ".pdf",
         mime="application/pdf"
     )
 
