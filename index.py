@@ -74,7 +74,7 @@ def first_page(data, page_height):
 
     # Second row
     can.drawString(x_start + 5, y_start - 44, "Investigation:")
-    can.drawString(x_start + 45*mm, y_start - 44, data["investigation"])  
+    can.drawString(x_start + 30*mm, y_start - 44, data["investigation"])  
     
     can.drawString(x_start + 140*mm, y_start - 44, "Medras ID:")
     can.drawString(x_start + 163*mm, y_start - 44, data["medras_id"])
